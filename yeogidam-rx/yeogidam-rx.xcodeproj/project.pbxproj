@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37EC4E883E90D5AD63C923AC /* Pods_yeogidam_rxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1469C3292125CCA6474187F2 /* Pods_yeogidam_rxTests.framework */; };
+		38F3A9FADD1868953F358BE7 /* Pods_yeogidam_rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C802D5B2AA1E6D5C7C9AD /* Pods_yeogidam_rx.framework */; };
+		4F3781D3B1E34DBDE373CAE7 /* Pods_yeogidam_rx_yeogidam_rxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54D092CFD3B704D297F802 /* Pods_yeogidam_rx_yeogidam_rxUITests.framework */; };
 		93C715F5296A83EB00813C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F4296A83EB00813C01 /* AppDelegate.swift */; };
 		93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F6296A83EB00813C01 /* SceneDelegate.swift */; };
 		93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F8296A83EB00813C01 /* MainViewController.swift */; };
@@ -15,6 +18,11 @@
 		93C7160C296A83ED00813C01 /* yeogidam_rxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C7160B296A83ED00813C01 /* yeogidam_rxTests.swift */; };
 		93C71616296A83ED00813C01 /* yeogidam_rxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C71615296A83ED00813C01 /* yeogidam_rxUITests.swift */; };
 		93C71618296A83ED00813C01 /* yeogidam_rxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C71617296A83ED00813C01 /* yeogidam_rxUITestsLaunchTests.swift */; };
+		93D4457D296A8B1B00DED109 /* DistrictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4457C296A8B1B00DED109 /* DistrictViewController.swift */; };
+		93D4457F296A8B2C00DED109 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4457E296A8B2C00DED109 /* SettingsViewController.swift */; };
+		93D44584296A998F00DED109 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D44583296A998F00DED109 /* UIColor+extension.swift */; };
+		93D44586296AA34D00DED109 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D44585296AA34D00DED109 /* MainViewModel.swift */; };
+		93D44589296AA58B00DED109 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D44588296AA58B00DED109 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1469C3292125CCA6474187F2 /* Pods_yeogidam_rxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yeogidam_rxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2612F8D8D5F694DDF2B70141 /* Pods-yeogidam-rx-yeogidam-rxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rx-yeogidam-rxUITests.release.xcconfig"; path = "Target Support Files/Pods-yeogidam-rx-yeogidam-rxUITests/Pods-yeogidam-rx-yeogidam-rxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		453F54FCB94FC25EAD9F0ED1 /* Pods-yeogidam-rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rx.debug.xcconfig"; path = "Target Support Files/Pods-yeogidam-rx/Pods-yeogidam-rx.debug.xcconfig"; sourceTree = "<group>"; };
+		4D933C9D092FF7E83D71E04F /* Pods-yeogidam-rxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rxTests.debug.xcconfig"; path = "Target Support Files/Pods-yeogidam-rxTests/Pods-yeogidam-rxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57A2D557F2555C98D2272024 /* Pods-yeogidam-rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rx.release.xcconfig"; path = "Target Support Files/Pods-yeogidam-rx/Pods-yeogidam-rx.release.xcconfig"; sourceTree = "<group>"; };
+		8B54D092CFD3B704D297F802 /* Pods_yeogidam_rx_yeogidam_rxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yeogidam_rx_yeogidam_rxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C715F1296A83EB00813C01 /* yeogidam-rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yeogidam-rx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C715F4296A83EB00813C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C715F6296A83EB00813C01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +61,14 @@
 		93C71611296A83ED00813C01 /* yeogidam-rxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yeogidam-rxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C71615296A83ED00813C01 /* yeogidam_rxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yeogidam_rxUITests.swift; sourceTree = "<group>"; };
 		93C71617296A83ED00813C01 /* yeogidam_rxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yeogidam_rxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93D4457C296A8B1B00DED109 /* DistrictViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictViewController.swift; sourceTree = "<group>"; };
+		93D4457E296A8B2C00DED109 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		93D44583296A998F00DED109 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		93D44585296AA34D00DED109 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		93D44588296AA58B00DED109 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		96630C4FC9956645280E78C7 /* Pods-yeogidam-rxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rxTests.release.xcconfig"; path = "Target Support Files/Pods-yeogidam-rxTests/Pods-yeogidam-rxTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD3C802D5B2AA1E6D5C7C9AD /* Pods_yeogidam_rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yeogidam_rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C866463D3E98F9F499539A /* Pods-yeogidam-rx-yeogidam-rxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rx-yeogidam-rxUITests.debug.xcconfig"; path = "Target Support Files/Pods-yeogidam-rx-yeogidam-rxUITests/Pods-yeogidam-rx-yeogidam-rxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F3A9FADD1868953F358BE7 /* Pods_yeogidam_rx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EC4E883E90D5AD63C923AC /* Pods_yeogidam_rxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3781D3B1E34DBDE373CAE7 /* Pods_yeogidam_rx_yeogidam_rxUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,8 @@
 				93C7160A296A83ED00813C01 /* yeogidam-rxTests */,
 				93C71614296A83ED00813C01 /* yeogidam-rxUITests */,
 				93C715F2296A83EB00813C01 /* Products */,
+				A0992CC181D138B6EC992771 /* Pods */,
+				F1795AAB9FAE87BE3F77E395 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +124,13 @@
 		93C715F3296A83EB00813C01 /* yeogidam-rx */ = {
 			isa = PBXGroup;
 			children = (
+				93D44587296AA57300DED109 /* CustomView */,
+				93D44580296A986500DED109 /* Extensions */,
+				93D4457A296A8AC600DED109 /* Model */,
+				93D44579296A8ABE00DED109 /* ViewModel */,
+				93D44578296A8AB700DED109 /* ViewController */,
 				93C715F4296A83EB00813C01 /* AppDelegate.swift */,
 				93C715F6296A83EB00813C01 /* SceneDelegate.swift */,
-				93C715F8296A83EB00813C01 /* MainViewController.swift */,
 				93C715FD296A83ED00813C01 /* Assets.xcassets */,
 				93C715FF296A83ED00813C01 /* LaunchScreen.storyboard */,
 				93C71602296A83ED00813C01 /* Info.plist */,
@@ -124,6 +155,70 @@
 			path = "yeogidam-rxUITests";
 			sourceTree = "<group>";
 		};
+		93D44578296A8AB700DED109 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93C715F8296A83EB00813C01 /* MainViewController.swift */,
+				93D4457C296A8B1B00DED109 /* DistrictViewController.swift */,
+				93D4457E296A8B2C00DED109 /* SettingsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		93D44579296A8ABE00DED109 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				93D44585296AA34D00DED109 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93D4457A296A8AC600DED109 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93D44580296A986500DED109 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93D44583296A998F00DED109 /* UIColor+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93D44587296AA57300DED109 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				93D44588296AA58B00DED109 /* SearchBar.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		A0992CC181D138B6EC992771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				453F54FCB94FC25EAD9F0ED1 /* Pods-yeogidam-rx.debug.xcconfig */,
+				57A2D557F2555C98D2272024 /* Pods-yeogidam-rx.release.xcconfig */,
+				F5C866463D3E98F9F499539A /* Pods-yeogidam-rx-yeogidam-rxUITests.debug.xcconfig */,
+				2612F8D8D5F694DDF2B70141 /* Pods-yeogidam-rx-yeogidam-rxUITests.release.xcconfig */,
+				4D933C9D092FF7E83D71E04F /* Pods-yeogidam-rxTests.debug.xcconfig */,
+				96630C4FC9956645280E78C7 /* Pods-yeogidam-rxTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1795AAB9FAE87BE3F77E395 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD3C802D5B2AA1E6D5C7C9AD /* Pods_yeogidam_rx.framework */,
+				8B54D092CFD3B704D297F802 /* Pods_yeogidam_rx_yeogidam_rxUITests.framework */,
+				1469C3292125CCA6474187F2 /* Pods_yeogidam_rxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93C7161B296A83ED00813C01 /* Build configuration list for PBXNativeTarget "yeogidam-rx" */;
 			buildPhases = (
+				5C705A8C431ECA4A3D880600 /* [CP] Check Pods Manifest.lock */,
 				93C715ED296A83EB00813C01 /* Sources */,
 				93C715EE296A83EB00813C01 /* Frameworks */,
 				93C715EF296A83EB00813C01 /* Resources */,
+				6E09977FE2893FDEC440B910 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93C7161E296A83ED00813C01 /* Build configuration list for PBXNativeTarget "yeogidam-rxTests" */;
 			buildPhases = (
+				0C141EC1F27198024CC122FF /* [CP] Check Pods Manifest.lock */,
 				93C71603296A83ED00813C01 /* Sources */,
 				93C71604296A83ED00813C01 /* Frameworks */,
 				93C71605296A83ED00813C01 /* Resources */,
@@ -166,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93C71621296A83ED00813C01 /* Build configuration list for PBXNativeTarget "yeogidam-rxUITests" */;
 			buildPhases = (
+				D46B22809675BFFDDB8CBD0B /* [CP] Check Pods Manifest.lock */,
 				93C7160D296A83ED00813C01 /* Sources */,
 				93C7160E296A83ED00813C01 /* Frameworks */,
 				93C7160F296A83ED00813C01 /* Resources */,
+				2C06E7C7AA7A78D910AC3329 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,7 +304,7 @@
 				};
 			};
 			buildConfigurationList = 93C715EC296A83EB00813C01 /* Build configuration list for PBXProject "yeogidam-rx" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -249,13 +349,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C141EC1F27198024CC122FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yeogidam-rxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C06E7C7AA7A78D910AC3329 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yeogidam-rx-yeogidam-rxUITests/Pods-yeogidam-rx-yeogidam-rxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yeogidam-rx-yeogidam-rxUITests/Pods-yeogidam-rx-yeogidam-rxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yeogidam-rx-yeogidam-rxUITests/Pods-yeogidam-rx-yeogidam-rxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C705A8C431ECA4A3D880600 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yeogidam-rx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E09977FE2893FDEC440B910 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yeogidam-rx/Pods-yeogidam-rx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yeogidam-rx/Pods-yeogidam-rx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yeogidam-rx/Pods-yeogidam-rx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46B22809675BFFDDB8CBD0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yeogidam-rx-yeogidam-rxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93C715ED296A83EB00813C01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D44586296AA34D00DED109 /* MainViewModel.swift in Sources */,
+				93D4457D296A8B1B00DED109 /* DistrictViewController.swift in Sources */,
 				93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */,
 				93C715F5296A83EB00813C01 /* AppDelegate.swift in Sources */,
+				93D44584296A998F00DED109 /* UIColor+extension.swift in Sources */,
+				93D44589296AA58B00DED109 /* SearchBar.swift in Sources */,
+				93D4457F296A8B2C00DED109 /* SettingsViewController.swift in Sources */,
 				93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +628,7 @@
 		};
 		93C7161C296A83ED00813C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453F54FCB94FC25EAD9F0ED1 /* Pods-yeogidam-rx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -430,7 +639,6 @@
 				INFOPLIST_FILE = "yeogidam-rx/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -449,6 +657,7 @@
 		};
 		93C7161D296A83ED00813C01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57A2D557F2555C98D2272024 /* Pods-yeogidam-rx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,7 +668,6 @@
 				INFOPLIST_FILE = "yeogidam-rx/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -478,6 +686,7 @@
 		};
 		93C7161F296A83ED00813C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D933C9D092FF7E83D71E04F /* Pods-yeogidam-rxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +707,7 @@
 		};
 		93C71620296A83ED00813C01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96630C4FC9956645280E78C7 /* Pods-yeogidam-rxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +728,7 @@
 		};
 		93C71622296A83ED00813C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C866463D3E98F9F499539A /* Pods-yeogidam-rx-yeogidam-rxUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +747,7 @@
 		};
 		93C71623296A83ED00813C01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2612F8D8D5F694DDF2B70141 /* Pods-yeogidam-rx-yeogidam-rxUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

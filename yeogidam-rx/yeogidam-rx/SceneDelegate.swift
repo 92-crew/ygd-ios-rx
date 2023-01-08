@@ -19,7 +19,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = MainViewController() // 시작 VC 작성해주기
+        
+        let tabBarController = UITabBarController()
+        let districtViewController = DistrictViewController()
+        let mainViewController = MainViewController()
+        let settingsViewController = SettingsViewController()
+        
+        window.rootViewController = tabBarController
+
+        tabBarController.setViewControllers([districtViewController, mainViewController, settingsViewController], animated: true)
+        districtViewController.tabBarItem = UITabBarItem(title: "전체", image: UIImage(named: "tabicon_district_unselected")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "tabicon_district_selected")?.withRenderingMode(.alwaysOriginal))
+        mainViewController.tabBarItem = UITabBarItem(title: "흡연구역", image: UIImage(named: "tabicon_main_unselected")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "tabicon_main_selected")?.withRenderingMode(.alwaysOriginal))
+        settingsViewController.tabBarItem = UITabBarItem(title: "설정", image: UIImage(named: "tabicon_settings_unselected")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "tabicon_settings_selected")?.withRenderingMode(.alwaysOriginal))
+
+        tabBarController.tabBar.backgroundColor = .white
+        tabBarController.tabBar.tintColor = .ygdNavy
+        tabBarController.selectedIndex = 1
         window.makeKeyAndVisible()
         self.window = window
         
