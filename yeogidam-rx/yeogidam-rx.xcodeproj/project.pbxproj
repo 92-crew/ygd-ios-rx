@@ -10,6 +10,10 @@
 		37EC4E883E90D5AD63C923AC /* Pods_yeogidam_rxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1469C3292125CCA6474187F2 /* Pods_yeogidam_rxTests.framework */; };
 		38F3A9FADD1868953F358BE7 /* Pods_yeogidam_rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3C802D5B2AA1E6D5C7C9AD /* Pods_yeogidam_rx.framework */; };
 		4F3781D3B1E34DBDE373CAE7 /* Pods_yeogidam_rx_yeogidam_rxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B54D092CFD3B704D297F802 /* Pods_yeogidam_rx_yeogidam_rxUITests.framework */; };
+		9345860E296AA85100530AA8 /* UITextField+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345860D296AA85100530AA8 /* UITextField+extension.swift */; };
+		93458610296ABAE200530AA8 /* demo.json in Resources */ = {isa = PBXBuildFile; fileRef = 9345860F296ABAE200530AA8 /* demo.json */; };
+		93458612296ABC5B00530AA8 /* DistrictViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93458611296ABC5B00530AA8 /* DistrictViewModel.swift */; };
+		93458614296ABC6500530AA8 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93458613296ABC6500530AA8 /* SettingsViewModel.swift */; };
 		93C715F5296A83EB00813C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F4296A83EB00813C01 /* AppDelegate.swift */; };
 		93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F6296A83EB00813C01 /* SceneDelegate.swift */; };
 		93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F8296A83EB00813C01 /* MainViewController.swift */; };
@@ -22,7 +26,6 @@
 		93D4457F296A8B2C00DED109 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4457E296A8B2C00DED109 /* SettingsViewController.swift */; };
 		93D44584296A998F00DED109 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D44583296A998F00DED109 /* UIColor+extension.swift */; };
 		93D44586296AA34D00DED109 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D44585296AA34D00DED109 /* MainViewModel.swift */; };
-		93D44589296AA58B00DED109 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D44588296AA58B00DED109 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		4D933C9D092FF7E83D71E04F /* Pods-yeogidam-rxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rxTests.debug.xcconfig"; path = "Target Support Files/Pods-yeogidam-rxTests/Pods-yeogidam-rxTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57A2D557F2555C98D2272024 /* Pods-yeogidam-rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rx.release.xcconfig"; path = "Target Support Files/Pods-yeogidam-rx/Pods-yeogidam-rx.release.xcconfig"; sourceTree = "<group>"; };
 		8B54D092CFD3B704D297F802 /* Pods_yeogidam_rx_yeogidam_rxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yeogidam_rx_yeogidam_rxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9345860D296AA85100530AA8 /* UITextField+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+extension.swift"; sourceTree = "<group>"; };
+		9345860F296ABAE200530AA8 /* demo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = demo.json; sourceTree = "<group>"; };
+		93458611296ABC5B00530AA8 /* DistrictViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictViewModel.swift; sourceTree = "<group>"; };
+		93458613296ABC6500530AA8 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		93C715F1296A83EB00813C01 /* yeogidam-rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yeogidam-rx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C715F4296A83EB00813C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C715F6296A83EB00813C01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +72,6 @@
 		93D4457E296A8B2C00DED109 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		93D44583296A998F00DED109 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		93D44585296AA34D00DED109 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		93D44588296AA58B00DED109 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		96630C4FC9956645280E78C7 /* Pods-yeogidam-rxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rxTests.release.xcconfig"; path = "Target Support Files/Pods-yeogidam-rxTests/Pods-yeogidam-rxTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD3C802D5B2AA1E6D5C7C9AD /* Pods_yeogidam_rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yeogidam_rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C866463D3E98F9F499539A /* Pods-yeogidam-rx-yeogidam-rxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeogidam-rx-yeogidam-rxUITests.debug.xcconfig"; path = "Target Support Files/Pods-yeogidam-rx-yeogidam-rxUITests/Pods-yeogidam-rx-yeogidam-rxUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 				93C715FD296A83ED00813C01 /* Assets.xcassets */,
 				93C715FF296A83ED00813C01 /* LaunchScreen.storyboard */,
 				93C71602296A83ED00813C01 /* Info.plist */,
+				9345860F296ABAE200530AA8 /* demo.json */,
 			);
 			path = "yeogidam-rx";
 			sourceTree = "<group>";
@@ -169,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				93D44585296AA34D00DED109 /* MainViewModel.swift */,
+				93458611296ABC5B00530AA8 /* DistrictViewModel.swift */,
+				93458613296ABC6500530AA8 /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -184,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				93D44583296A998F00DED109 /* UIColor+extension.swift */,
+				9345860D296AA85100530AA8 /* UITextField+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,7 +201,6 @@
 		93D44587296AA57300DED109 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				93D44588296AA58B00DED109 /* SearchBar.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -328,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93458610296ABAE200530AA8 /* demo.json in Resources */,
 				93C71601296A83ED00813C01 /* LaunchScreen.storyboard in Resources */,
 				93C715FE296A83ED00813C01 /* Assets.xcassets in Resources */,
 			);
@@ -457,13 +467,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93458612296ABC5B00530AA8 /* DistrictViewModel.swift in Sources */,
 				93D44586296AA34D00DED109 /* MainViewModel.swift in Sources */,
 				93D4457D296A8B1B00DED109 /* DistrictViewController.swift in Sources */,
 				93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */,
 				93C715F5296A83EB00813C01 /* AppDelegate.swift in Sources */,
+				93458614296ABC6500530AA8 /* SettingsViewModel.swift in Sources */,
 				93D44584296A998F00DED109 /* UIColor+extension.swift in Sources */,
-				93D44589296AA58B00DED109 /* SearchBar.swift in Sources */,
 				93D4457F296A8B2C00DED109 /* SettingsViewController.swift in Sources */,
+				9345860E296AA85100530AA8 /* UITextField+extension.swift in Sources */,
 				93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,7 +574,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -616,7 +629,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -638,7 +652,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "yeogidam-rx/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -667,7 +680,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "yeogidam-rx/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

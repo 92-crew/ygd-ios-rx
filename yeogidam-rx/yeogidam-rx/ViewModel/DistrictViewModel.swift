@@ -1,12 +1,12 @@
 //
-//  SearchBar.swift
+//  DistrictViewModel.swift
 //  yeogidam-rx
 //
 //  Created by 이강욱 on 2023/01/08.
 //
 
-import UIKit
+import Foundation
 
-class SearchBar: UIView {
+class DistrictViewModel {
     
 }
