@@ -1,1 +1,63 @@
-
+{
+    "smoking-areas": [
+        {
+            "id": 1,
+            "name": "강북경찰서 정문 옆",
+            "description": "",
+            "type": {
+                "code": "COMPLETELY_CLOSED",
+                "name": "완전폐쇄형"
+            },
+            "category": {
+                "id": 1,
+                "name": "경찰서"
+            },
+            "location": {
+                "si": {
+                    "code": 1,
+                    "name": "서울시"
+                },
+                "gu": {
+                    "code": 2,
+                    "name": "강북구"
+                },
+                "road": "도봉로",
+                "roadCode": 83,
+                "building": "강북경찰서",
+                "detail": "정문 옆",
+                "latitude": 37.6373039,
+                "longitude": 127.0273399
+            }
+        },
+        {
+            "id": 2,
+            "name": "구의오피스",
+            "description": "",
+            "type": {
+                "code": "COMPLETELY_CLOSED",
+                "name": "완전폐쇄형"
+            },
+            "category": {
+                "id": 1,
+                "name": "기타"
+            },
+            "location": {
+                "si": {
+                    "code": 1,
+                    "name": "서울시"
+                },
+                "gu": {
+                    "code": 2,
+                    "name": "광진구"
+                },
+                "road": "자양로",
+                "roadCode": 26,
+                "building": "자양빌딩",
+                "detail": "주차장",
+                "latitude": 37.539819,
+                "longitude": 127.088778
+            }
+        }
+        
+    ]
+}

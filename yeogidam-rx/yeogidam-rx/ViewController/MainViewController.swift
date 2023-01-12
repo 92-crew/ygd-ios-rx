@@ -18,34 +18,35 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     private var mapView: NMFMapView!
     private var viewModel: MainViewModel!
     private var locationOverlay: NMFLocationOverlay!
+    private var favoriteMode: Bool = false
     
     private let searchBar: UIStackView = {
-        let sv = UIStackView()
-        let tf = UITextField()
-        let iv = UIImageView(image: UIImage(systemName: "magnifyingglass"))
-        iv.tintColor = .ygdNavy
-        tf.backgroundColor = .white
-        tf.layer.cornerRadius = 5
-        tf.addLeftPadding()
-        sv.addSubview(tf)
-        sv.addSubview(iv)
-        tf.frame = sv.frame
-        tf.snp.makeConstraints { make in
-            make.size.equalTo(sv)
+        let stackView = UIStackView()
+        let textField = UITextField()
+        let imageView = UIImageView(image: UIImage(systemName: "magnifyingglass"))
+        imageView.tintColor = .ygdNavy
+        textField.backgroundColor = .white
+        textField.layer.cornerRadius = 5
+        textField.addLeftPadding()
+        stackView.addSubview(textField)
+        stackView.addSubview(imageView)
+        textField.frame = stackView.frame
+        textField.snp.makeConstraints { make in
+            make.size.equalTo(stackView)
         }
-        iv.snp.makeConstraints { make in
-            make.trailing.equalTo(sv).offset(-10)
-            make.centerY.equalTo(sv)
+        imageView.snp.makeConstraints { make in
+            make.trailing.equalTo(stackView).offset(-10)
+            make.centerY.equalTo(stackView)
             make.width.equalTo(20)
             make.height.equalTo(20)
         }
-        return sv
+        return stackView
     }()
     private let favoriteButton: UIButton = {
         let btn = UIButton()
         btn.layer.cornerRadius = 0.5 * btn.bounds.width
         btn.clipsToBounds = true
-        btn.setImage(UIImage(named: "button_favorite_unselected"), for: .normal)
+        btn.setBackgroundImage(UIImage(named: "button_favorite_unselected"), for: .normal)
         
         return btn
     }()
@@ -53,7 +54,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         let btn = UIButton()
         btn.layer.cornerRadius = 0.5 * btn.bounds.width
         btn.clipsToBounds = true
-        btn.setImage(UIImage(named: "button_current"), for: .normal)
+        btn.setBackgroundImage(UIImage(named: "button_current"), for: .normal)
         return btn
     }()
     
@@ -91,6 +92,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                 self.mapView.longitude = 127.04455548501139
             }
         }
+        requestSmokingAreas()
     }
     
     private func setConstraints() {
@@ -121,7 +123,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                 self.locationOverlay = self.mapView.locationOverlay
                 self.locationOverlay.location = NMGLatLng(lat: self.locationManager.location?.coordinate.latitude ?? 0, lng: self.locationManager.location?.coordinate.longitude ?? 0)
                 self.locationOverlay.hidden = false
-                self.locationOverlay.icon = NMFOverlayImage(name: "img_current")
+                self.mapView.positionMode = .normal
+                
                 let cameraUpdate = NMFCameraUpdate(scrollTo: NMGLatLng(lat: self.locationManager.location?.coordinate.latitude ?? 0, lng: self.locationManager.location?.coordinate.longitude ?? 0))
                 cameraUpdate.animation = .easeIn
                 self.mapView.moveCamera(cameraUpdate)
@@ -140,9 +143,44 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         
         favoriteButton.rx.tap
             .bind(onNext: { event in
-                print("favorite")
+                if self.favoriteMode {
+                    self.favoriteButton.setBackgroundImage(UIImage(named: "button_favorite_unselected"), for: .normal)
+                    self.favoriteMode = false
+                } else {
+                    self.favoriteButton.setBackgroundImage(UIImage(named: "button_favorite_selected"), for: .normal)
+                    self.favoriteMode = true
+                }
+                self.viewModel.isFavoriteMode.accept(!self.favoriteMode)
             }).disposed(by: disposeBag)
+        
+        viewModel.smokingAreaRelay
+            .subscribe(onNext: { locations in
+                DispatchQueue.global().async {
+                    var markers = [NMFMarker]()
+                    for i in 0..<locations.count {
+                        let marker = NMFMarker()
+                        let lat = locations[i].latitude
+                        let lng = locations[i].longitude
+                        print("Marker : \(lat), \(lng)")
+                        marker.position = NMGLatLng(lat: lat, lng: lng)
+                        marker.iconImage = NMFOverlayImage(name: "marker_unselected")
+                        markers.append(marker)
+                        
+                        DispatchQueue.main.async { [weak self] in
+                            guard let self = self else { return }
+                            markers[i].mapView = self.mapView
+                        }
+                    }
+                    
+                }
+            
+        }).disposed(by: disposeBag)
     }
+    
+    private func requestSmokingAreas() {
+        viewModel.requestSmokingAreas()
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
          self.view.endEditing(true)
    }

@@ -14,6 +14,10 @@
 		93458610296ABAE200530AA8 /* demo.json in Resources */ = {isa = PBXBuildFile; fileRef = 9345860F296ABAE200530AA8 /* demo.json */; };
 		93458612296ABC5B00530AA8 /* DistrictViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93458611296ABC5B00530AA8 /* DistrictViewModel.swift */; };
 		93458614296ABC6500530AA8 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93458613296ABC6500530AA8 /* SettingsViewModel.swift */; };
+		9345861629709EB700530AA8 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861529709EB700530AA8 /* APIManager.swift */; };
+		9345861829709F6700530AA8 /* SmokingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861729709F6700530AA8 /* SmokingArea.swift */; };
+		9345861A29709FCB00530AA8 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861929709FCB00530AA8 /* Resource.swift */; };
+		934586202970A03700530AA8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861F2970A03700530AA8 /* Location.swift */; };
 		93C715F5296A83EB00813C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F4296A83EB00813C01 /* AppDelegate.swift */; };
 		93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F6296A83EB00813C01 /* SceneDelegate.swift */; };
 		93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F8296A83EB00813C01 /* MainViewController.swift */; };
@@ -56,6 +60,10 @@
 		9345860F296ABAE200530AA8 /* demo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = demo.json; sourceTree = "<group>"; };
 		93458611296ABC5B00530AA8 /* DistrictViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictViewModel.swift; sourceTree = "<group>"; };
 		93458613296ABC6500530AA8 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		9345861529709EB700530AA8 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9345861729709F6700530AA8 /* SmokingArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingArea.swift; sourceTree = "<group>"; };
+		9345861929709FCB00530AA8 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		9345861F2970A03700530AA8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		93C715F1296A83EB00813C01 /* yeogidam-rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yeogidam-rx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C715F4296A83EB00813C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C715F6296A83EB00813C01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +138,8 @@
 		93C715F3296A83EB00813C01 /* yeogidam-rx */ = {
 			isa = PBXGroup;
 			children = (
+				9345861529709EB700530AA8 /* APIManager.swift */,
+				9345861929709FCB00530AA8 /* Resource.swift */,
 				93D44587296AA57300DED109 /* CustomView */,
 				93D44580296A986500DED109 /* Extensions */,
 				93D4457A296A8AC600DED109 /* Model */,
@@ -185,6 +195,8 @@
 		93D4457A296A8AC600DED109 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9345861729709F6700530AA8 /* SmokingArea.swift */,
+				9345861F2970A03700530AA8 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,14 +479,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9345861A29709FCB00530AA8 /* Resource.swift in Sources */,
+				934586202970A03700530AA8 /* Location.swift in Sources */,
 				93458612296ABC5B00530AA8 /* DistrictViewModel.swift in Sources */,
 				93D44586296AA34D00DED109 /* MainViewModel.swift in Sources */,
 				93D4457D296A8B1B00DED109 /* DistrictViewController.swift in Sources */,
 				93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */,
+				9345861629709EB700530AA8 /* APIManager.swift in Sources */,
 				93C715F5296A83EB00813C01 /* AppDelegate.swift in Sources */,
 				93458614296ABC6500530AA8 /* SettingsViewModel.swift in Sources */,
 				93D44584296A998F00DED109 /* UIColor+extension.swift in Sources */,
 				93D4457F296A8B2C00DED109 /* SettingsViewController.swift in Sources */,
+				9345861829709F6700530AA8 /* SmokingArea.swift in Sources */,
 				9345860E296AA85100530AA8 /* UITextField+extension.swift in Sources */,
 				93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */,
 			);
