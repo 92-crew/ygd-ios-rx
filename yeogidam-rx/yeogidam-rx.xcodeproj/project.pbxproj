@@ -18,6 +18,7 @@
 		9345861829709F6700530AA8 /* SmokingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861729709F6700530AA8 /* SmokingArea.swift */; };
 		9345861A29709FCB00530AA8 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861929709FCB00530AA8 /* Resource.swift */; };
 		934586202970A03700530AA8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861F2970A03700530AA8 /* Location.swift */; };
+		934586242972A07500530AA8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934586232972A07500530AA8 /* Response.swift */; };
 		93C715F5296A83EB00813C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F4296A83EB00813C01 /* AppDelegate.swift */; };
 		93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F6296A83EB00813C01 /* SceneDelegate.swift */; };
 		93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F8296A83EB00813C01 /* MainViewController.swift */; };
@@ -64,6 +65,7 @@
 		9345861729709F6700530AA8 /* SmokingArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokingArea.swift; sourceTree = "<group>"; };
 		9345861929709FCB00530AA8 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		9345861F2970A03700530AA8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		934586232972A07500530AA8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		93C715F1296A83EB00813C01 /* yeogidam-rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yeogidam-rx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C715F4296A83EB00813C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C715F6296A83EB00813C01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			children = (
 				9345861729709F6700530AA8 /* SmokingArea.swift */,
 				9345861F2970A03700530AA8 /* Location.swift */,
+				934586232972A07500530AA8 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				934586202970A03700530AA8 /* Location.swift in Sources */,
 				93458612296ABC5B00530AA8 /* DistrictViewModel.swift in Sources */,
 				93D44586296AA34D00DED109 /* MainViewModel.swift in Sources */,
+				934586242972A07500530AA8 /* Response.swift in Sources */,
 				93D4457D296A8B1B00DED109 /* DistrictViewController.swift in Sources */,
 				93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */,
 				9345861629709EB700530AA8 /* APIManager.swift in Sources */,

@@ -171,9 +171,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
                             markers[i].mapView = self.mapView
                         }
                     }
-                    
                 }
-            
         }).disposed(by: disposeBag)
     }
     

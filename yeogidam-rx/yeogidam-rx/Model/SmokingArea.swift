@@ -14,6 +14,11 @@ struct SmokingArea: Codable {
     var type: AreaType
     var category: Category
     var location: Location
+    var scale: Scale
+    var management: Management
+    var establishedAt: String
+    var establishedBy: String
+    var updatedAt: String
 }
 
 struct AreaType: Codable {
@@ -24,4 +29,15 @@ struct AreaType: Codable {
 struct Category: Codable {
     var id: Int
     var name: String
+}
+
+struct Scale: Codable {
+    var value: Int
+    var unit: String
+    var displayString: String
+}
+
+struct Management: Codable {
+    var isUnderManagement: Bool
+    var managerName: String?
 }

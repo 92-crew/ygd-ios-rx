@@ -14,16 +14,17 @@ struct Location: Codable {
     var roadCode: Int
     var building: String
     var detail: String
+    var displayString: String
     var latitude: Double
     var longitude: Double
 }
 
 struct Si: Codable {
-    var code: Int
+    var id: Int
     var name: String
 }
 
 struct Gu: Codable {
-    var code: Int
+    var id: Int
     var name: String
 }

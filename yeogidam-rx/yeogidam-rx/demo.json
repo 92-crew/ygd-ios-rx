@@ -1,63 +1,88 @@
 {
-    "smoking-areas": [
+    "data": [
         {
-            "id": 1,
-            "name": "강북경찰서 정문 옆",
-            "description": "",
-            "type": {
-                "code": "COMPLETELY_CLOSED",
-                "name": "완전폐쇄형"
-            },
-            "category": {
                 "id": 1,
-                "name": "경찰서"
-            },
-            "location": {
-                "si": {
-                    "code": 1,
-                    "name": "서울시"
+                "name": "강북경찰서 정문 옆",
+                "description": "",
+                "type": {
+                    "code": "COMPLETELY_CLOSED",
+                    "name": "완전폐쇄형"
                 },
-                "gu": {
-                    "code": 2,
-                    "name": "강북구"
+                "category": {
+                    "id": 1,
+                    "name": "경찰서"
                 },
-                "road": "도봉로",
-                "roadCode": 83,
-                "building": "강북경찰서",
-                "detail": "정문 옆",
-                "latitude": 37.6373039,
-                "longitude": 127.0273399
-            }
+                "location": {
+                    "si": {
+                        "id": 1,
+                        "name": "서울시"
+                    },
+                    "gu": {
+                        "id": 2,
+                        "name": "강북구"
+                    },
+                    "road": "도봉로",
+                    "roadCode": 83,
+                    "building": "강북경찰서",
+                    "detail": "정문 옆",
+                    "displayString": "서울시 강북구 도봉로 83 강북경찰서 정문 옆",
+                    "latitude": 37.6373039,
+                    "longitude": 127.0273399
+                },
+                "scale": {
+                    "value": 6,
+                    "unit": "SQUARE_METER",
+                    "displayString": "6 m2"
+                },
+                "management": {
+                    "isUnderManagement": false,
+                    "managerName": null
+                },
+                "establishedAt": "2017-10-24",
+                "establishedBy": "강북경찰서",
+                "updatedAt": "2023-01-08 12:44"
         },
         {
-            "id": 2,
-            "name": "구의오피스",
-            "description": "",
-            "type": {
-                "code": "COMPLETELY_CLOSED",
-                "name": "완전폐쇄형"
-            },
-            "category": {
-                "id": 1,
-                "name": "기타"
-            },
-            "location": {
-                "si": {
-                    "code": 1,
-                    "name": "서울시"
+                "id": 2,
+                "name": "구의오피스",
+                "description": "",
+                "type": {
+                    "code": "COMPLETELY_CLOSED",
+                    "name": "완전폐쇄형"
                 },
-                "gu": {
-                    "code": 2,
-                    "name": "광진구"
+                "category": {
+                    "id": 1,
+                    "name": "사무실"
                 },
-                "road": "자양로",
-                "roadCode": 26,
-                "building": "자양빌딩",
-                "detail": "주차장",
-                "latitude": 37.539819,
-                "longitude": 127.088778
-            }
+                "location": {
+                    "si": {
+                        "id": 1,
+                        "name": "서울시"
+                    },
+                    "gu": {
+                        "id": 2,
+                        "name": "광진구"
+                    },
+                    "road": "자양로",
+                    "roadCode": 99,
+                    "building": "자양빌딩",
+                    "detail": "정문 옆",
+                            "displayString": "서울시 광진구 자양로",
+                    "latitude": 37.539819,
+                    "longitude": 127.088778
+                },
+                "scale": {
+                    "value": 6,
+                    "unit": "SQUARE_METER",
+                    "displayString": "6 m2"
+                },
+                "management": {
+                    "isUnderManagement": false,
+                    "managerName": "이강욱"
+                },
+                "establishedAt": "2017-10-24",
+                "establishedBy": "구의오피스",
+                "updatedAt": "2023-01-08 12:44"
         }
-        
     ]
 }
