@@ -52,7 +52,7 @@ class APIManager {
                                    let establishedBy = subJson["establishedBy"].string,
                                    let updatedAt = subJson["updatedAt"].string
                                 {
-                                    var managerName = subJson["management"]["managerName"].string
+                                    let managerName = subJson["management"]["managerName"].string
                                     let smokingArea = SmokingArea(id: id, name: name, description: description, type: AreaType(code: typeCode, name: typeName), category: Category(id: categoryId, name: categoryName), location: Location(si: Si(id: siId, name: siName), gu: Gu(id: guId, name: guName), road: road, roadCode: roadCode, building: building, detail: detail, displayString: locationDisplayString, latitude: latitude, longitude: longitude), scale: Scale(value: value, unit: unit, displayString: sclaeDisplayString), management: Management(isUnderManagement: isUnderManagement, managerName: managerName), establishedAt: establishedAt, establishedBy: establishedBy, updatedAt: updatedAt)
                                     smokingAreas.append(smokingArea)
                                 } else {

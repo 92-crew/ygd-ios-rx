@@ -157,18 +157,27 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
             .subscribe(onNext: { locations in
                 DispatchQueue.global().async {
                     var markers = [NMFMarker]()
+                    let unselectedImage = NMFOverlayImage(name: "marker_unselected")
+                    let selectedImage = NMFOverlayImage(name: "marker_selected")
                     for i in 0..<locations.count {
                         let marker = NMFMarker()
                         let lat = locations[i].latitude
                         let lng = locations[i].longitude
                         print("Marker : \(lat), \(lng)")
                         marker.position = NMGLatLng(lat: lat, lng: lng)
-                        marker.iconImage = NMFOverlayImage(name: "marker_unselected")
+                        marker.iconImage = unselectedImage
                         markers.append(marker)
                         
-                        DispatchQueue.main.async { [weak self] in
-                            guard let self = self else { return }
+                        DispatchQueue.main.async {
                             markers[i].mapView = self.mapView
+                            
+                            // TODO: 서로 다른 마커 선택시 이미지 변경
+                            markers[i].touchHandler = { bool in
+                                markers[i].iconImage = selectedImage
+                                let cameraUpdate = NMFCameraUpdate(scrollTo: marker.position)
+                                self.mapView.moveCamera(cameraUpdate)
+                                return true
+                            }
                         }
                     }
                 }
@@ -185,3 +194,8 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     
 }
 
+extension MainViewController: NMFMapViewTouchDelegate {
+    func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint) {
+        
+    }
+}
