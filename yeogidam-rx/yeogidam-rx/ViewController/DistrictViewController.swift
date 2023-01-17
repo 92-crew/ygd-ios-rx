@@ -49,6 +49,7 @@ class DistrictViewController: UIViewController, UITableViewDelegate, UITableView
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = .ygdNavy
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         view.addSubview(navigationBar)
