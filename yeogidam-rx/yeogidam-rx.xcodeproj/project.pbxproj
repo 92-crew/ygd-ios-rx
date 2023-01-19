@@ -19,8 +19,12 @@
 		9345861A29709FCB00530AA8 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861929709FCB00530AA8 /* Resource.swift */; };
 		934586202970A03700530AA8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345861F2970A03700530AA8 /* Location.swift */; };
 		934586242972A07500530AA8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934586232972A07500530AA8 /* Response.swift */; };
+
+		9345862C2979FABF00530AA8 /* SettingsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345862B2979FABF00530AA8 /* SettingsViewCell.swift */; };
+
 		934586262972FAB000530AA8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934586252972FAB000530AA8 /* TableViewCell.swift */; };
 		9345862829763C9D00530AA8 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345862729763C9D00530AA8 /* UIViewController+extension.swift */; };
+
 		93C715F5296A83EB00813C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F4296A83EB00813C01 /* AppDelegate.swift */; };
 		93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F6296A83EB00813C01 /* SceneDelegate.swift */; };
 		93C715F9296A83EB00813C01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C715F8296A83EB00813C01 /* MainViewController.swift */; };
@@ -68,8 +72,12 @@
 		9345861929709FCB00530AA8 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		9345861F2970A03700530AA8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		934586232972A07500530AA8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+
+		9345862B2979FABF00530AA8 /* SettingsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewCell.swift; path = "yeogidam-rx/Extensions/SettingsViewCell.swift"; sourceTree = SOURCE_ROOT; };
+
 		934586252972FAB000530AA8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		9345862729763C9D00530AA8 /* UIViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extension.swift"; sourceTree = "<group>"; };
+
 		93C715F1296A83EB00813C01 /* yeogidam-rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yeogidam-rx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C715F4296A83EB00813C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93C715F6296A83EB00813C01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,7 +229,11 @@
 		93D44587296AA57300DED109 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+
+				9345862B2979FABF00530AA8 /* SettingsViewCell.swift */,
+
 				934586252972FAB000530AA8 /* TableViewCell.swift */,
+
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -502,7 +514,11 @@
 				93D44584296A998F00DED109 /* UIColor+extension.swift in Sources */,
 				93D4457F296A8B2C00DED109 /* SettingsViewController.swift in Sources */,
 				9345861829709F6700530AA8 /* SmokingArea.swift in Sources */,
+
+				9345862C2979FABF00530AA8 /* SettingsViewCell.swift in Sources */,
+
 				9345862829763C9D00530AA8 /* UIViewController+extension.swift in Sources */,
+
 				9345860E296AA85100530AA8 /* UITextField+extension.swift in Sources */,
 				93C715F7296A83EB00813C01 /* SceneDelegate.swift in Sources */,
 			);
