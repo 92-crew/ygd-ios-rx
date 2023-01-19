@@ -20,11 +20,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         self.view.backgroundColor = .ygdNavy
         // Do any additional setup after loading the view.
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "SettingsViewCell")
+        tableView.register(SettingsViewCell.self, forCellReuseIdentifier: "SettingsViewCell")
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = .systemGray5
         setNavigationBar()
         setConstraints()
     }
@@ -55,16 +55,19 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 
 extension SettingsViewController {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return data.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsViewCell", for: indexPath)
-        cell.textLabel?.text = data[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsViewCell", for: indexPath) as! SettingsViewCell
+        if indexPath.row == 4 {
+            cell.arrowImage.image = nil
+        }
+        cell.label.text = data[indexPath.row]
         return cell
     }
 }

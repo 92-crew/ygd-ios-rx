@@ -24,6 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let districtViewController = DistrictViewController()
         let mainViewController = MainViewController()
         let settingsViewController = SettingsViewController()
+        let nav = UINavigationController(rootViewController: settingsViewController)
+        
         window.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
         window.makeKeyAndVisible()
         
@@ -31,10 +33,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = tabBarController
         }
         
-        tabBarController.setViewControllers([districtViewController, mainViewController, settingsViewController], animated: true)
+        tabBarController.setViewControllers([districtViewController, mainViewController, nav], animated: true)
         districtViewController.tabBarItem = UITabBarItem(title: "전체", image: UIImage(named: "tabicon_district_unselected")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "tabicon_district_selected")?.withRenderingMode(.alwaysOriginal))
         mainViewController.tabBarItem = UITabBarItem(title: "흡연구역", image: UIImage(named: "tabicon_main_unselected")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "tabicon_main_selected")?.withRenderingMode(.alwaysOriginal))
-        settingsViewController.tabBarItem = UITabBarItem(title: "설정", image: UIImage(named: "tabicon_settings_unselected")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "tabicon_settings_selected")?.withRenderingMode(.alwaysOriginal))
+        nav.tabBarItem = UITabBarItem(title: "설정", image: UIImage(named: "tabicon_settings_unselected")?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named: "tabicon_settings_selected")?.withRenderingMode(.alwaysOriginal))
         
         tabBarController.tabBar.backgroundColor = .white
         tabBarController.tabBar.tintColor = .ygdNavy
